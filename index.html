@@ -63,7 +63,7 @@ document.getElementById('house1').addEventListener('click', function () {
   document.getElementById('house1-A').style.display = 'block';
   document.getElementById('house1-B').style.display = 'block';
   document.getElementById('axe').style.display = 'block'; 
- axe.play(); setTimeout(function () { window.location.href = '/newhouse/crew/'; }, 1300); });
+ axe.play(); setTimeout(function () { window.location.href = '/smlwiki/newhouse/crew/'; }, 1300); });
 </script> <script> const areaTitle = document.querySelector('.area-title');
 document.getElementById('house1').addEventListener('mouseover', function () {
  areaTitle.innerHTML = 'Visit the new house'; areaTitle.style.opacity = '100%'; areaTitle.style.transform = 'scale(1)'; });
@@ -101,5 +101,5 @@ document.addEventListener("DOMContentLoaded", function () { var warningClosed = 
 }); document.getElementById("close-warning").addEventListener("click", function () { hideWarning(); });
 var resetWarning = false; if (resetWarning) { localStorage.removeItem("warningClosed"); document.getElementById("sense-warning").style.display = "block"; } </script>
 
-<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
+<script> fetch('https://soapydx.github.io/smlwiki/global/header.html') .then(response => response.text()) .then(html => { document.getElementById('header-container').innerHTML = html; }) .catch(error => console.error('error fetching header:', error)); </script>
 </body></html>
